@@ -1,0 +1,10 @@
+{
+  "name": "thinkboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": { "concurrently": "^9.1.0" }
+}
